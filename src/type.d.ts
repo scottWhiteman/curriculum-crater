@@ -1,3 +1,20 @@
+interface Source {
+  id: number
+  name: string,
+  sourceType: string, //Enumerator required later
+  link: string,
+  description: string,
+  tags: Array<string> //Tag Enumerator late
+}
+
+interface Curriculum {
+  id: number,
+  name: string,
+  sources: Array<number>, //Source ids go here
+  pages: number, //TODO
+  tags: Array<string>
+}
+
 type UserState = {
   userId: number
 };
