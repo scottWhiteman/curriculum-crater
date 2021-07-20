@@ -1,9 +1,12 @@
 import React from 'react';
+import Navbar from '../Navbar/Navbar';
+
+import Search from '../Search/Search';
 
 const Homepage = () => {
   return (
     <div className='homepage'>
-      <h1>Curriculum Maker</h1>
+      <Search/>
     </div>
   );
 }

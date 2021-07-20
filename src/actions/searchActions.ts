@@ -1,7 +1,7 @@
 import * as types from './types';
 
 export function searchCurriculum() {
-
+  
 }
 
 export function httpRequestTest(action: SearchAction) {

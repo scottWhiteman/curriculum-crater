@@ -1,0 +1,33 @@
+header .container {
+  width: 80%;
+  margin: auto;
+}
+
+#Nav-Header h1 {
+  display: inline;
+}
+
+.navbar {
+  float: right;
+  margin-top: 10px;
+}
+
+.navbar ul li {
+  display: inline;
+  float: left;
+  margin: 0 0.2rem;
+}
+
+.navbar a {
+  height: 100%;
+  font-size: 1.4rem;
+  padding: 0.4rem 1.0rem;
+}
+
+.navbar a:hover {
+  opacity: 0.8;
+}
+
+.navbar .current {
+  border-bottom: 3px solid var(--accent-color);
+}
