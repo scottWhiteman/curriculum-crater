@@ -5,6 +5,9 @@ header .container {
 
 #Nav-Header h1 {
   display: inline;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
 }
 
 .navbar {
@@ -21,7 +24,9 @@ header .container {
 .navbar a {
   height: 100%;
   font-size: 1.4rem;
-  padding: 0.4rem 1.0rem;
+  padding: 0.4rem 0.8rem;
+  letter-spacing: 0.1rem;
+  text-align: end;
 }
 
 .navbar a:hover {

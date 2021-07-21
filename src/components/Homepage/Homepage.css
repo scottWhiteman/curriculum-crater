@@ -1,0 +1,53 @@
+#Homepage .container {
+  width: 80%;
+  margin: auto;
+}
+
+#Homepage h1 {
+  text-align: center;
+  margin: 2rem auto;
+  letter-spacing: 0.25rem;
+}
+
+#Homepage p {
+  font-size: 1.2rem;
+  line-height: 1.25;
+  letter-spacing: 0.1rem;
+  margin: 0 1rem;
+  width: 50%;
+}
+
+#Homepage .placeholder {
+  width: 50%;
+  background-color: #213476;
+  margin: 0 1rem;
+  height: 300px;
+}
+
+#Homepage .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem auto;
+  width: 100%;
+}
+
+#Homepage .flex:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+#Homepage ul {
+  width: 100%;
+  height: 200px;
+  overflow: scroll;
+}
+
+#Homepage li {
+  display: inline;
+}
+
+#Homepage .curr {
+  width: 240px;
+  height: 200px; 
+  display: inline-block;
+}

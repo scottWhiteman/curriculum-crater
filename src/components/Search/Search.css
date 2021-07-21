@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  text-align: start;
 }
 
 #Search .input-container {
@@ -12,7 +12,9 @@
 }
 
 #Search p {
+  font-weight: 700;
   margin: 0.5rem auto;
+  font-size: 1.5rem;
 }
 
 .input-container input[type=text] {
@@ -20,6 +22,10 @@
   background-color: #333;
   color: #fff;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border-radius: 3px;
+  margin: 0.5rem auto;
+  padding: 0.8rem;
+  padding-bottom: 0.4rem;
+  box-shadow: 2px 2px var(--box-accent);
 }

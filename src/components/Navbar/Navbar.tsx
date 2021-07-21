@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className='container'>
       <div id='Nav-Header'>
-        <h1>Curriculum Maker</h1>
+        <h1>Curriculum Crater</h1>
         <nav className='navbar'>
           <ul>
             <li className='current'><a href='#'>Home</a></li>
