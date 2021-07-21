@@ -25,7 +25,9 @@ export default function Search() {
         />
       </div>
       <div className='advanced'></div>
-      <div className="container input-container"> <button type='submit' className='btn btn-lg'>Search</button></div>
+      <div className="container input-container">
+        <button type='submit' className='btn btn-lg'>Search</button>
+      </div>
     </form>
   )
 }
