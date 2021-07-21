@@ -33,6 +33,7 @@ header .container {
   opacity: 0.8;
 }
 
+
 .navbar .current {
   border-bottom: 3px solid var(--accent-color);
 }
