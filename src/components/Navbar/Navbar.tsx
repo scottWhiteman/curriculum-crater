@@ -1,4 +1,7 @@
 import React from 'react';
+
+import { NavLink } from 'react-router-dom'
+
 import './Navbar.css';
 
 const Navbar = () => {
@@ -8,9 +11,15 @@ const Navbar = () => {
         <h1>Curriculum Crater</h1>
         <nav className='navbar'>
           <ul>
-            <li className='current'><a href='#'>Home</a></li>
-            <li><a href='#'>Curriculums</a></li>
-            <li><a href='#'>Sources</a></li>
+            <li>
+              <NavLink to='/' exact activeClassName='current'>Home</NavLink>
+            </li>
+            <li>
+              <NavLink to='/curriculums' activeClassName='current'>Curriculums</NavLink>
+            </li>
+            <li>
+              <NavLink to='/resources' activeClassName='current'>Sources</NavLink>
+            </li>
           </ul>
         </nav>
       </div>
