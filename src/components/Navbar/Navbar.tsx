@@ -12,13 +12,26 @@ const Navbar = () => {
         <nav className='navbar'>
           <ul>
             <li>
-              <NavLink to='/' exact activeClassName='current'>Home</NavLink>
+              <NavLink
+                to='/'
+                exact
+                activeClassName='current'>
+                  Home
+                </NavLink>
             </li>
             <li>
-              <NavLink to='/curriculums' activeClassName='current'>Curriculums</NavLink>
+              <NavLink
+                to='/curriculums'
+                activeClassName='current'>
+                  Curriculums
+                </NavLink>
             </li>
             <li>
-              <NavLink to='/resources' activeClassName='current'>Sources</NavLink>
+              <NavLink
+                to='/sources'
+                activeClassName='current'>
+                  Sources
+                </NavLink>
             </li>
           </ul>
         </nav>

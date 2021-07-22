@@ -4,7 +4,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from 'react-router-dom';
 
 import './App.css';
@@ -27,7 +26,7 @@ function App() {
           <Route path='/curriculums'>
             <Search/>
           </Route>
-          <Route path='/resources'>
+          <Route path='/sources'>
             <Search/>
           </Route>
         </Switch>
