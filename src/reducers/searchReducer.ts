@@ -8,6 +8,7 @@ const initialState: SearchState = {
 const searchReducer = (state = initialState, action: SearchAction) => {
   switch(action.type) {
     case GET_SEARCH:
+      console.log('get search');
       return state;
     default:
       return state;

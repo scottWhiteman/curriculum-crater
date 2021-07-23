@@ -1,17 +1,26 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { searchCurriculum } from '../../actions/searchActions';
 
 import { useForm } from '../../utils/useForm';
 
 import './Search.css';
 
 export default function Search() {
+  const dispatch = useDispatch();
+  const [search, setSearch] = useState<{}>();
   // const [values, handleChange] = useForm({textSearch: '', tagSearch: ''});
   const [textSearch, setTextSearch] = useState('');
   const [tagSearch, setTagSearch] = useState('');
 
   const handleSearch = (e:React.FormEvent) => {
     e.preventDefault();
-    console.log(textSearch, tagSearch);
+
+    const searchData = {
+      textSearch,
+      tagSearch
+    }
+    searchCurriculum(dispatch, searchData);
   }
   return (
     <form id='Search' onSubmit={handleSearch} autoComplete='off'>
