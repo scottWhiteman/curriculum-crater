@@ -49,8 +49,8 @@
   display: inline;
 }
 
-#Homepage .curr {
-  width: 240px;
+#Homepage .curriculum{
+  /* width: 240px;
   height: 200px; 
-  display: inline-block;
+  display: inline-block; */
 }

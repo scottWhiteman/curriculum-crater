@@ -13,12 +13,12 @@ const Homepage = () => {
         <section className='recent'>
           <ul>
             <li>
-              <div className='placeholder curr'></div>
-              <div className='placeholder curr'></div>
-              <div className='placeholder curr'></div>
-              <div className='placeholder curr'></div>
-              <div className='placeholder curr'></div>
-              <div className='placeholder curr'></div>
+              <div className='curriculum'></div>
+              <div className='curriculum'></div>
+              <div className='curriculum'></div>
+              <div className='curriculum'></div>
+              <div className='curriculum'></div>
+              <div className='curriculum'></div>
             </li>
           </ul>
         </section>

@@ -10,6 +10,7 @@ interface Source {
 interface Curriculum {
   id: number,
   name: string,
+  thumb?: string,
   sources: Array<number>, //Source ids go here
   pages: number, //TODO
   tags: Array<string>
