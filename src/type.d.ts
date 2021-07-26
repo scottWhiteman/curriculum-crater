@@ -20,6 +20,10 @@ type UserState = {
   userId: number
 };
 
+type CurriculumState = {
+  curriculums: Curriculum[]
+}
+
 type SearchState = {
   searchQuery: string,
   tags: string[]

@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from '../Navbar/Navbar';
+import Navbar from '../../components/Navbar/Navbar';
 
 import './Homepage.css';
 
-import Search from '../Search/Search';
+import Search from '../../components/Search/Search';
 
 const Homepage = () => {
   return (

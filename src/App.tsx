@@ -8,9 +8,10 @@ import {
 
 import './App.css';
 
-import Homepage from './components/Homepage/Homepage';
+import Homepage from './pages/Homepage/Homepage';
 import Search from './components/Search/Search';
 import Navbar from './components/Navbar/Navbar';
+import CurriculumPage from './pages/CurriculumPage/CurriculumPage';
 
 function App() {
   return (
@@ -24,10 +25,10 @@ function App() {
             <Homepage/>
           </Route>
           <Route path='/curriculums'>
-            <Search/>
+            <CurriculumPage/>
           </Route>
           <Route path='/sources'>
-            <Search/>
+            <CurriculumPage/>
           </Route>
         </Switch>
       </div>
