@@ -3,7 +3,7 @@ import { Dispatch } from 'redux';
 import { shallowEqual, useDispatch, useSelector } from 'react-redux'
 import { searchCurriculum } from '../../actions/searchActions';
 import Search from '../../components/Search/Search'
-import { Curriculum } from '../../components/ResultsContainer/Curriculum';
+import Curriculum from '../../components/ResultsContainer/Curriculum';
 
 const CurriculumPage = () => {
   const curriculums: readonly Curriculum[] = useSelector(

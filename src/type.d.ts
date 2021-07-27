@@ -3,6 +3,7 @@ interface Source {
   id: number
   name: string,
   sourceType: string, //Enumerator required later
+  thumb?: string,
   link: string,
   description: string,
   tags: string[]//Tag Enumerator late
@@ -21,14 +22,20 @@ interface Curriculum {
 //Root Reducer
 type ReducerState = {
   curriculums: CurriculumState,
+  sources: SourceState,
   users: UserState,
-  search: SearchState
+  search: SearchState,
 }
 
 //User
 type UserState = {
   userId: number
 };
+
+//Source
+type SourceState = {
+  results: Source[]
+}
 
 //Curriculum
 type CurriculumState = {

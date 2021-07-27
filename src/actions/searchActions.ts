@@ -9,10 +9,19 @@ export function searchCurriculum(searchData:SearchState) {
   return httpRequestTest(action);
 }
 
+export function searchSource(searchData:SearchState) {
+  const action: Action = {
+    type: types.GET_SEARCH,
+    payload: searchData
+  }
+  console.log('search source')
+  return httpRequestTest(action);
+}
+
 export function httpRequestTest(action: Action) {
   return (dispatch:DispatchSearch) => {
     setTimeout(() => {
-      console.log('hi');
+      
       dispatch(action);
     }, 1000);
   }
