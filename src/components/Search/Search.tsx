@@ -21,17 +21,17 @@ const Search: React.FC<Props> = ({ searchHandler }) => {
   const handleSearch = (e:React.FormEvent) => {
     e.preventDefault();
 
-    const searchData = {
-      textSearch,
-      tagSearch
+    const searchData:SearchState = {
+      searchQuery: textSearch,
+      tags: [tagSearch]
     }
     searchCurriculum(searchData);
   }
 
-  const searchSources = React.useCallback(
-    (searchData:SearchState) => dispatch(searchHandler(searchData)),
-    [dispatch, searchHandler]
-  );
+  // const searchSources = React.useCallback(
+  //   (searchData:SearchState) => dispatch(searchHandler(searchData)),
+  //   [dispatch, searchHandler]
+  // );
 
   return (
     <form id='Search' onSubmit={handleSearch} autoComplete='off'>

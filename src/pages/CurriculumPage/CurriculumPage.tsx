@@ -7,17 +7,17 @@ import { Curriculum } from '../../components/ResultsContainer/Curriculum';
 
 const CurriculumPage = () => {
   const curriculums: readonly Curriculum[] = useSelector(
-    (state: CurriculumState) => state.curriculums,
+    (state: ReducerState) => state.curriculums.results,
     shallowEqual
   );
 
   const dispatch: Dispatch<any> = useDispatch();
 
   const getCurriculums = React.useCallback(
-    (searchData:object) => dispatch(searchCurriculum(searchData)),
+    (searchData:SearchState) => dispatch(searchCurriculum(searchData)),
     [dispatch]
   );
-
+  console.log(curriculums);
   return (
     <div id='CurriculumPage'>
       <Search searchHandler={getCurriculums}/>

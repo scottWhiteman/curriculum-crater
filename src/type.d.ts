@@ -1,42 +1,50 @@
+/* Data Object Types */
 interface Source {
   id: number
   name: string,
   sourceType: string, //Enumerator required later
   link: string,
   description: string,
-  tags: Array<string> //Tag Enumerator late
+  tags: string[]//Tag Enumerator late
 }
-
 interface Curriculum {
   id: number,
   name: string,
   thumb?: string,
-  sources: Array<number>, //Source ids go here
+  sources: number[], //Source ids go here
   pages: number, //TODO
-  tags: Array<string>
+  tags: string[]
 }
 
+/* State Types */
+
+//Root Reducer
+type ReducerState = {
+  curriculums: CurriculumState,
+  users: UserState,
+  search: SearchState
+}
+
+//User
 type UserState = {
   userId: number
 };
 
+//Curriculum
 type CurriculumState = {
-  curriculums: Curriculum[]
+  results: Curriculum[]
 }
 
+//Search
 type SearchState = {
   searchQuery: string,
   tags: string[]
 }
 
-type UserAction = {
+//Action Type for Redux dispatching
+type Action = {
   type: string,
   payload: any
 }
-
-type SearchAction = {
-  type: string,
-  payload: any
-};
 
 type DispatchSearch = (args: SearchAction) => SearchAction;

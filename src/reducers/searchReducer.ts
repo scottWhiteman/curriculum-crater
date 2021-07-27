@@ -5,7 +5,7 @@ const initialState: SearchState = {
   tags: []
 }
 
-const searchReducer = (state = initialState, action: SearchAction) => {
+const searchReducer = (state = initialState, action: Action) => {
   switch(action.type) {
     case GET_SEARCH:
       console.log(state.searchQuery);

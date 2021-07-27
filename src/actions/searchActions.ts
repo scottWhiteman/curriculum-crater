@@ -1,7 +1,7 @@
 import * as types from './types';
 
-export function searchCurriculum(searchData:object) {
-  const action: SearchAction = {
+export function searchCurriculum(searchData:SearchState) {
+  const action: Action = {
     type: types.GET_SEARCH,
     payload: searchData
   }
@@ -9,7 +9,7 @@ export function searchCurriculum(searchData:object) {
   return httpRequestTest(action);
 }
 
-export function httpRequestTest(action: SearchAction) {
+export function httpRequestTest(action: Action) {
   return (dispatch:DispatchSearch) => {
     setTimeout(() => {
       console.log('hi');

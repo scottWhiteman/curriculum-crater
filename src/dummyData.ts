@@ -1,4 +1,4 @@
-export const sources:Array<Source> = [
+export const sources:Source[] = [
   {
     id: 1,
     name: 'Integral Chart',
@@ -25,7 +25,7 @@ export const sources:Array<Source> = [
   },
 ];
 
-export const curriculums:Array<Curriculum> = [
+export const curriculums:Curriculum[] = [
   {
     id: 1,
     name: 'Calculus Guide',

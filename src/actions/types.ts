@@ -1,7 +1,9 @@
 export const GET_SEARCH = 'GET_SEARCH';
+
 export const ADD_SOURCE = 'ADD_SOURCE';
 export const DELETE_SOURCE = 'DELETE_SOURCE';
 export const EDIT_SOURCE = 'EDIT_SOURCE';
+
 export const ADD_CURRICULUM = 'ADD_CURRICULUM';
 export const DELETE_CURRICULUM = 'DELETE_CURRICULUM';
 export const EDIT_CURRICULUM = 'EDIT_CURRICULUM';
