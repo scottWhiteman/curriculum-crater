@@ -11,6 +11,7 @@ import './App.css';
 import Homepage from './pages/Homepage/Homepage';
 import Navbar from './components/Navbar/Navbar';
 import CurriculumPage from './pages/CurriculumPage/CurriculumPage';
+import SourcesPage from './pages/SourcesPage/SourcesPage';
 
 function App() {
   return (
@@ -27,7 +28,7 @@ function App() {
             <CurriculumPage/>
           </Route>
           <Route path='/sources'>
-            <CurriculumPage/>
+            <SourcesPage/>
           </Route>
         </Switch>
       </div>

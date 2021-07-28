@@ -6,7 +6,6 @@ const initialState = {
 }
 
 const curriculumReducer = (state: CurriculumState = initialState, action: Action): CurriculumState => {
-  console.log('curriciulum Reducer call');
   switch(action.type) {
     default:
       return state;

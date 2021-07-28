@@ -5,7 +5,6 @@ export function searchCurriculum(searchData:SearchState) {
     type: types.GET_SEARCH,
     payload: searchData
   }
-  console.log('search')
   return httpRequestTest(action);
 }
 
@@ -14,7 +13,6 @@ export function searchSource(searchData:SearchState) {
     type: types.GET_SEARCH,
     payload: searchData
   }
-  console.log('search source')
   return httpRequestTest(action);
 }
 

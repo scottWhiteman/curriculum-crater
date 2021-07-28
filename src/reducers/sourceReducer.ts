@@ -6,8 +6,9 @@ const initialState:SourceState = {
 }
 
 const sourceReducer = (state:SourceState = initialState, action:Action) => {
-  console.log('Source Reducer Call');
   switch(action.type) {
+    case GET_SEARCH:
+      return state;
     default:
       return state;
   }

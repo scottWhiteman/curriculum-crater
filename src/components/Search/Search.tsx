@@ -18,23 +18,32 @@ const Search: React.FC<Props> = ({ searchHandler }) => {
   const [textSearch, setTextSearch] = useState('');
   const [tagSearch, setTagSearch] = useState('');
 
-  const handleSearch = (e:React.FormEvent) => {
-    e.preventDefault();
+  // const handleSearch = (e:React.FormEvent) => {
+  //   e.preventDefault();
 
-    const searchData:SearchState = {
-      searchQuery: textSearch,
-      tags: [tagSearch]
-    }
-    searchCurriculum(searchData);
-  }
+  //   const searchData:SearchState = {
+  //     searchQuery: textSearch,
+  //     tags: [tagSearch]
+  //   }
+  //   searchCurriculum(searchData);
+  // }
 
-  // const searchSources = React.useCallback(
+  // const searchQuery = React.useCallback(
   //   (searchData:SearchState) => dispatch(searchHandler(searchData)),
   //   [dispatch, searchHandler]
   // );
 
+  const searchQuery = (e:React.FormEvent) => {
+    e.preventDefault();
+    const searchData:SearchState = {
+      searchQuery: textSearch,
+      tags: [tagSearch]
+    }
+    searchHandler(searchData);
+  }
+
   return (
-    <form id='Search' onSubmit={handleSearch} autoComplete='off'>
+    <form id='Search' onSubmit={searchQuery} autoComplete='off'>
       <div className='input-container'>
         <p>Search Text: </p>
         <input

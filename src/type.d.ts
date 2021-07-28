@@ -54,4 +54,4 @@ type Action = {
   payload: any
 }
 
-type DispatchSearch = (args: SearchAction) => SearchAction;
+type DispatchSearch = (args: Action) => Action;
