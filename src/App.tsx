@@ -9,7 +9,6 @@ import {
 import './App.css';
 
 import Homepage from './pages/Homepage/Homepage';
-import Search from './components/Search/Search';
 import Navbar from './components/Navbar/Navbar';
 import CurriculumPage from './pages/CurriculumPage/CurriculumPage';
 
