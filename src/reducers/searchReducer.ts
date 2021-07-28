@@ -1,14 +1,13 @@
-import { GET_SEARCH } from '../actions/types';
+import { GET_SOURCES } from '../actions/types';
 
 const initialState: SearchState = {
   searchQuery: '',
-  tags: []
+  tags: ''
 }
 
 const searchReducer = (state = initialState, action: Action) => {
   switch(action.type) {
-    case GET_SEARCH:
-      console.log(state.searchQuery);
+    case GET_SOURCES:
       return state;
     default:
       return state;

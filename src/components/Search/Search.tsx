@@ -37,13 +37,13 @@ const Search: React.FC<Props> = ({ searchHandler }) => {
     e.preventDefault();
     const searchData:SearchState = {
       searchQuery: textSearch,
-      tags: [tagSearch]
+      tags: tagSearch
     }
     searchHandler(searchData);
   }
 
   return (
-    <form id='Search' onSubmit={searchQuery} autoComplete='off'>
+    <form id='Search' className='input-form' onSubmit={searchQuery} autoComplete='off'>
       <div className='input-container'>
         <p>Search Text: </p>
         <input

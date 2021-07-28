@@ -17,7 +17,7 @@ const CurriculumPage = () => {
     (searchData:SearchState) => dispatch(searchCurriculum(searchData)),
     [dispatch]
   );
-  console.log(curriculums);
+
   return (
     <div id='CurriculumPage'>
       <Search searchHandler={getCurriculums}/>

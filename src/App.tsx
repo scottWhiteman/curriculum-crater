@@ -12,6 +12,7 @@ import Homepage from './pages/Homepage/Homepage';
 import Navbar from './components/Navbar/Navbar';
 import CurriculumPage from './pages/CurriculumPage/CurriculumPage';
 import SourcesPage from './pages/SourcesPage/SourcesPage';
+import LoginPage from './pages/LoginPage/LoginPage';
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
           </Route>
           <Route path='/sources'>
             <SourcesPage/>
+          </Route>
+          <Route path='/login'>
+            <LoginPage/>
           </Route>
         </Switch>
       </div>

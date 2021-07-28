@@ -39,6 +39,8 @@ code {
     monospace;
 }
 
+/* Buttons */
+
 .btn {
   background-color: var(--accent-color);
   outline: none;
@@ -55,6 +57,11 @@ code {
   opacity: 0.8;
 }
 
+.btn:active {
+  opacity: 1;
+
+}
+
 .btn-lg {
   font-weight: 700;
   padding: 0.7rem 1.2rem;
@@ -67,4 +74,33 @@ code {
   width: 240px;
   height: 200px;
   display: inline-block;
+}
+
+/* Containers */
+
+/* Forms */
+.input-form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+}
+
+.input-container {
+  margin: 0.5rem auto;
+}
+
+.input-container input {
+  outline: none;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  margin: 0.5rem auto;
+  padding: 0.8rem;
+  padding-bottom: 0.4rem;
+  box-shadow: 2px 2px var(--box-accent);
 }

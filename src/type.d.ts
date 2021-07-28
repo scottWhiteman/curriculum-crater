@@ -45,7 +45,7 @@ type CurriculumState = {
 //Search
 type SearchState = {
   searchQuery: string,
-  tags: string[]
+  tags: string
 }
 
 //Action Type for Redux dispatching
