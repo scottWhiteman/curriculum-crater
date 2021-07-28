@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 
+import { useForm } from '../../utils/useForm';
+
 const LoginForm = () => {
+  const [values, setValues] = useForm({username: '', password: ''});
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSubmit = (e:React.FormEvent) => {
     e.preventDefault();
-    console.log('SUBMIT YOUR USERNAME')
   }
 
   return (
@@ -15,20 +17,20 @@ const LoginForm = () => {
         <p>Search Text: </p>
         <input
           type='text'
-          name='text-search'
+          name='username'
           placeholder='Username...'
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
+          value={values.username}
+          onChange={(e) => setValues(e)}
         />
       </div>
       <div className='input-container'>
         <p>Password: </p>
         <input
           type='password'
-          name='tag-search'
+          name='password'
           placeholder='Password...'
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
+          value={values.password}
+          onChange={(e) => setValues(e)}
         />
       </div>
       <div className='advanced'></div>
