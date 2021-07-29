@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 type Props = {
   curriculum: Curriculum
@@ -6,10 +7,10 @@ type Props = {
 
 const Curriculum: React.FC<Props> = ({ curriculum }) => {
   return (
-    <div className='curriculum'>
+    <Link to={`/curriculums/${curriculum.name}`} className='curriculum'>
       <h3>{curriculum.name}</h3>
       {curriculum.thumb && <img src={curriculum.thumb}/>}
-    </div>
+    </Link>
   );
 }
 

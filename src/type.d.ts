@@ -39,7 +39,8 @@ type SourceState = {
 
 //Curriculum
 type CurriculumState = {
-  results: Curriculum[]
+  results: Curriculum[],
+  selected?: Curriculum | null
 }
 
 //Search

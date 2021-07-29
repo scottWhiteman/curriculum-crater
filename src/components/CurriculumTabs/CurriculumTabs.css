@@ -1,0 +1,6 @@
+#Curriculum-Tabs {
+  float: left;
+  display: fixed;
+  height: 80vh;
+  background-color: rgba(70,70,120,1);
+}

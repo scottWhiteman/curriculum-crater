@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+
+import './CurriculumTabs.css';
 
 type Props = {
   tabs: string[]
@@ -6,7 +8,7 @@ type Props = {
 
 const CurriculumTabs: React.FC<Props> = ({tabs}) => {
   return (
-    <aside className='curriculum-tabs'>
+    <aside id='Curriculum-Tabs' className='curriculum-tabs'>
       <ul>
         {tabs.map(tab => <li>{tab}</li>)}
       </ul>

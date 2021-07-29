@@ -13,6 +13,7 @@ import Navbar from './components/Navbar/Navbar';
 import CurriculumPage from './pages/CurriculumPage/CurriculumPage';
 import SourcesPage from './pages/SourcesPage/SourcesPage';
 import LoginPage from './pages/LoginPage/LoginPage';
+import CurriculumDetailPage from './pages/CurriculumDetailPage/CurriculumDetailPage';
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
           <Route exact path='/'>
             <Homepage/>
           </Route>
-          <Route path='/curriculums'>
+          <Route exact path='/curriculums'>
             <CurriculumPage/>
           </Route>
           <Route path='/sources'>
@@ -33,6 +34,9 @@ function App() {
           </Route>
           <Route path='/login'>
             <LoginPage/>
+          </Route>
+          <Route path='/curriculums/'>
+            <CurriculumDetailPage/>
           </Route>
         </Switch>
       </div>

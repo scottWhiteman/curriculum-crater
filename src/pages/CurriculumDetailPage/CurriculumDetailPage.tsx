@@ -1,16 +1,23 @@
 import React from 'react'
+import { shallowEqual, useSelector } from 'react-redux';
 import CurriculumTabs from '../../components/CurriculumTabs/CurriculumTabs';
 import TabContent from '../../components/TabContent/TabContent';
 
 type Props = {
-  curriculum: Curriculum
+  curriculum?: Curriculum
 }
 
-const CurriculumDetailPage: React.FC<Props> = ({curriculum}) => {
+const CurriculumDetailPage: React.FC<Props> = () => {
+  const selectedCurriculum = useSelector((state:ReducerState) => {
+    return state.curriculums.selected;
+  }, shallowEqual);
   return (
     <div>
-      <CurriculumTabs tabs={curriculum.tabs}/>
-      <TabContent/>
+      {selectedCurriculum && <>
+        <CurriculumTabs tabs={selectedCurriculum.tabs}/>
+        <TabContent/>
+      </>}
+      {!selectedCurriculum && <h2>No Curriculum Selected!</h2>}
     </div>
   )
 }
