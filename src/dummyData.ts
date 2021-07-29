@@ -54,7 +54,7 @@ export const curriculums:Curriculum[] = [
     id: 1,
     name: 'Calculus Guide',
     sources: [1, 3],
-    pages: 2,
+    tabs: ['Intro', 'Materials', 'Derivatives'],
     tags: ['calculus, derivatives, integrals, mathematics']
   }
 ];

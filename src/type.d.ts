@@ -13,7 +13,7 @@ interface Curriculum {
   name: string,
   thumb?: string,
   sources: number[], //Source ids go here
-  pages: number, //TODO
+  tabs: string[], //TODO
   tags: string[]
 }
 
