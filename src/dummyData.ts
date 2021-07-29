@@ -23,6 +23,30 @@ export const sources:Source[] = [
     description: 'Chart for deriving sine, cosine, etc.',
     tags: ['calculus', 'derivatives', 'mathematics']
   },
+  {
+    id: 4,
+    name: 'Basic Geometry Formulas',
+    sourceType: 'text',
+    link: 'https://www.google.com',
+    description: 'Geometry formulas for reference',
+    tags: ['math', 'geometry']
+  },
+  {
+    id: 5,
+    name: 'How to build a pc and not break it',
+    sourceType: 'website',
+    link: 'https://www.google.com',
+    description: 'Quick guide about making a PC',
+    tags: ['basic', 'building', 'computers']
+  },
+  {
+    id: 6,
+    name: 'Martial Arts List',
+    sourceType: 'text',
+    link: 'https://www.google.com',
+    description: 'Comprehensive list of different martial arts',
+    tags: ['martial-arts', 'list']
+  },
 ];
 
 export const curriculums:Curriculum[] = [

@@ -19,18 +19,20 @@ const SourcesPage = () => {
   );
   
   return (
-    <div id='CurriculumPage'>
+    <div id='CurriculumPage' className='page'>
       <Search searchHandler={getSources}/>
-      <ul className='curriculum-list'>
-        {sources.map((source: Source) => {
-          return (
-            <Source
-              key={source.id}
-              source={source}
-            />
-          )
-        })}
-      </ul>
+      <section className='search-results-body'>
+        <ul className='sources-list'>
+          {sources.map((source: Source) => {
+            return (
+              <Source
+                key={source.id}
+                source={source}
+              />
+            )
+          })}
+        </ul>
+      </section>
     </div>
   );
 }

@@ -9,7 +9,6 @@ const Curriculum: React.FC<Props> = ({ curriculum }) => {
     <div className='curriculum'>
       <h3>{curriculum.name}</h3>
       {curriculum.thumb && <img src={curriculum.thumb}/>}
-
     </div>
   );
 }

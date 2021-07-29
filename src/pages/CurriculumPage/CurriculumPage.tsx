@@ -19,18 +19,20 @@ const CurriculumPage = () => {
   );
 
   return (
-    <div id='CurriculumPage'>
+    <div id='CurriculumPage' className='page'>
       <Search searchHandler={getCurriculums}/>
-      <ul className='curriculum-list'>
-        {curriculums.map((curriculum: Curriculum) => {
-          return (
-            <Curriculum
-              key={curriculum.id}
-              curriculum={curriculum}
-            />
-          )
-        })}
-      </ul>
+      <div className='search-results-body'>
+        <ul className='curriculum-list'>
+          {curriculums.map((curriculum: Curriculum) => {
+            return (
+              <Curriculum
+                key={curriculum.id}
+                curriculum={curriculum}
+              />
+            )
+          })}
+        </ul>
+      </div>
     </div>
   )
 }
