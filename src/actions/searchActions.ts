@@ -16,10 +16,17 @@ export function searchSource(searchData:SearchState) {
   return httpRequestTest(action);
 }
 
+export function selectCurriculum(selectedCurriculum: Curriculum) {
+  const action: Action = {
+    type: types.SELECT_CURRICULUM,
+    payload: selectedCurriculum
+  }
+  return httpRequestTest(action);
+}
+
 export function httpRequestTest(action: Action) {
   return (dispatch:DispatchSearch) => {
     setTimeout(() => {
-      
       dispatch(action);
     }, 1000);
   }
