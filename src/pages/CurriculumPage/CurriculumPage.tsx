@@ -29,7 +29,7 @@ const CurriculumPage = () => {
                 key={curriculum.id}
                 curriculum={curriculum}
               />
-            )
+            );
           })}
         </ul>
       </div>

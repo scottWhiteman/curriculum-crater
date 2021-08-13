@@ -1,6 +1,29 @@
 #Curriculum-Tabs {
   float: left;
-  display: fixed;
+  position: fixed;
   height: 80vh;
+  width: 10rem;
   background-color: rgba(70,70,120,1);
+}
+
+#Curriculum-Tabs ul {
+  width: 100%;
+}
+
+#Curriculum-Tabs li {
+  padding: 5px 0;
+  width: auto;
+}
+
+#Curriculum-Tabs a {
+  padding: 5px 0;
+  width: auto;
+  margin: auto;
+  font-size: 1.3rem;
+}
+
+#Curriculum-Tabs .current {
+  background-color: aliceblue;
+  width: auto;
+  color: black;
 }

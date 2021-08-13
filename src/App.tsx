@@ -35,7 +35,7 @@ function App() {
           <Route path='/login'>
             <LoginPage/>
           </Route>
-          <Route path='/curriculums/'>
+          <Route path='/curriculums/:curriculumId'>
             <CurriculumDetailPage/>
           </Route>
         </Switch>
