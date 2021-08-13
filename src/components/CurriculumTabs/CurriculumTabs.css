@@ -11,19 +11,32 @@
 }
 
 #Curriculum-Tabs li {
-  padding: 5px 0;
+  /* padding: 5px 0; */
   width: auto;
 }
 
 #Curriculum-Tabs a {
-  padding: 5px 0;
-  width: auto;
+  display: block;
+  padding: 5px 15px;
+  width: 100%;
+  line-height: 2rem;
   margin: auto;
   font-size: 1.3rem;
 }
+#Curriculum-Tabs a:hover {
+  padding-left: 20px;
+  padding-right: 10px;
+  background-color: rgba(160,160,200,1);
+  color: black;
+}
 
 #Curriculum-Tabs .current {
+  padding-left: 20px;
+  padding-right: 10px;
   background-color: aliceblue;
-  width: auto;
+  font-weight: bold;
   color: black;
+}
+#Curriculum-Tabs .current:hover {
+  background-color: aliceblue;
 }
