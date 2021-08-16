@@ -13,8 +13,12 @@ interface Curriculum {
   name: string,
   thumb?: string,
   sources: number[], //Source ids go here
-  tabs: string[], //TODO
+  tabs: Tab[], //TODO
   tags: string[]
+}
+interface Tab {
+  name: string,
+  content: string
 }
 
 /* State Types */

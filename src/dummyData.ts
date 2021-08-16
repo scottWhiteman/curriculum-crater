@@ -54,7 +54,21 @@ export const curriculums:Curriculum[] = [
     id: 1,
     name: 'Calculus Guide',
     sources: [1, 3],
-    tabs: ['Intro', 'Materials', 'Derivatives'],
+    //tabs: ['Intro', 'Materials', 'Derivatives'],
+    tabs: [
+      {
+        name: 'Intro',
+        content: 'Lores the god bla the dace jing jong jong eerr dsc slavioka fros tle pa padarad nawras moif kun la la dingus poopie',
+      },
+      {
+        name: 'Materials',
+        content: 'Lores the god bla the dace jing jong jong eerr dsc slavioka fros tle pa padarad nawras moif',
+      },
+      {
+        name: 'Derivatives',
+        content: 'L bla the dace jing jong jong eerr dsc slavioka fros tle pa padarad nawras moif kun la la dingus poopie',
+      }
+    ],
     tags: ['calculus, derivatives, integrals, mathematics']
   }
 ];

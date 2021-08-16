@@ -5,16 +5,17 @@ import './CurriculumTabs.css';
 
 type Props = {
   curriculumId: number,
-  tabs: string[]
+  tabs: Tab[],
+  selectTab: Function
 }
 //Later fetch tabname instead of number/id?
 const CurriculumTabs: React.FC<Props> = (props) => {
   return (
     <aside id='Curriculum-Tabs' className='curriculum-tabs'>
       <ul>
-        {props.tabs.map((tab:string, i:number)=> (
+        {props.tabs.map((tab:Tab, i:number)=> (
           <li key={i}>
-            <NavLink to={`/curriculums/${props.curriculumId}/${tab}`} activeClassName='current'>{tab}</NavLink>
+            <NavLink onClick={() => props.selectTab(tab.name)} to={`/curriculums/${props.curriculumId}/${tab.name}`} activeClassName='current'>{tab.name}</NavLink>
           </li>
         ))}
       </ul>

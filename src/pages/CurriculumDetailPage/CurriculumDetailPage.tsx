@@ -22,12 +22,14 @@ const CurriculumDetailPage: React.FC<Props> = () => {
 
   //Fetch curriculum by ID from database
   const curriculum = curriculums.find(c => c.id == Number(curriculumId));
+  const [selectedTab, setTab] = React.useState(curriculum?.tabs[0].name);
+  const tabContent = curriculum?.tabs.find(tab => tab.name === selectedTab)?.content;
 
   return (
     <div>
       {curriculum && <>
-        <CurriculumTabs curriculumId={Number(curriculumId)} tabs={curriculum.tabs}/>
-        <TabContent/>
+        <CurriculumTabs curriculumId={Number(curriculumId)} tabs={curriculum.tabs} selectTab={setTab}/>
+        <TabContent content={tabContent}/>
       </>}
       {!curriculum && <h2>No Curriculum Selected!</h2>}
     </div>
