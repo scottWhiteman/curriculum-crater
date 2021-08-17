@@ -1,8 +1,8 @@
 #Curriculum-Tabs {
   float: left;
   position: fixed;
-  height: 80vh;
-  width: 10rem;
+  height: 84vh;
+  width: 15vw;
   background-color: rgba(70,70,120,1);
 }
 

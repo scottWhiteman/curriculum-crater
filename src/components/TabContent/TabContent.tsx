@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './TabContent.css';
 
 type Props = {
   //placeholder: may change to be more complex
