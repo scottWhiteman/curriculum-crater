@@ -17,11 +17,6 @@ const curriculumReducer = (state: CurriculumState = initialState, action: Action
         ...state,
         results: curriculumResults
       }
-    // case SELECT_CURRICULUM:
-    //   return {
-    //     ...state,
-    //     selected: action.payload
-    //   }
     default:
       return state;
   }
