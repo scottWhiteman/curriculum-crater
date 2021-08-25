@@ -4,7 +4,6 @@ import { curriculums } from '../dummyData';
 
 const initialState = {
   results: [],
-  // selected: null
 }
 
 const curriculumReducer = (state: CurriculumState = initialState, action: Action): CurriculumState => {

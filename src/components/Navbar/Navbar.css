@@ -36,3 +36,14 @@ header .container {
 .navbar .current {
   border-bottom: 3px solid var(--accent-color);
 }
+
+.navbar .nav-login-icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 30px;
+  top: 50%;
+  float: left;
+  background-color: white;
+  transform: translate(-50%, -50%);
+}

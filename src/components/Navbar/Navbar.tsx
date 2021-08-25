@@ -11,6 +11,13 @@ const Navbar = () => {
         <h1>Curriculum Crater</h1>
         <nav className='navbar'>
           <ul>
+            <li className={'nav-login-icon'}>
+              <NavLink
+                to='/login'
+              >
+                
+              </NavLink>
+            </li>
             <li>
               <NavLink
                 to='/'
